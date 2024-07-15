@@ -1,0 +1,75 @@
+@keyframes animateBackground {
+  0% { background-color: #e0f7fa; }
+  50% { background-color: #b2ebf2; }
+  100% { background-color: #e0f7fa; }
+}
+
+
+.sk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  animation: animateBackground 10s infinite;
+  margin-top: 100px;
+
+
+}
+
+.header {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+
+
+.student-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.name {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.registration-number {
+  font-size: 1em;
+  margin: 0;
+}
+
+.toggle-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #00bcd4;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.toggle-button:hover {
+  background-color: #008c9e;
+}
+
+.additional-content {
+  margin-top: 20px;
+  transition: max-height 0.3s, opacity 0.3s;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.additional-content.visible {
+  max-height: 100px;
+  opacity: 1;
+}
